@@ -1,0 +1,72 @@
+---
+layout: master
+title: Home
+description: My blog site
+---
+
+<div class="container">
+	<header class="row">
+	  <div class="col-sm-6 col-md-12" style="margin-top:25px;margin-bottom:25px">
+	    <h1 id="pin">{{site.title}}</h1>
+	  </div>
+	</header>
+	<nav>
+		<div class="row" style="margin-top:25px">
+ 			<div class="col-md-4 col-sm-6 col-xs-12">
+				<a href="about/">
+					<div class="tile purple profile bord">
+							<h2 class="title">About Me</h2>
+							<p>Hello World, I am {{site.author}}.</p>
+						</div>						
+				</a>
+		    </div>
+		    <div class="col-md-2 col-sm-3 col-xs-6">
+				<div class="live-tile" data-mode="flip" data-delay="4000">
+					<div>
+						<img src="assets/images/sagarmattoo2.png" >
+					</div>
+					<div>
+						<img src="assets/images/sagarmattoo3.png" >
+					</div>
+				</div>
+			</div>
+			<div class="col-md-2 col-sm-3 col-xs-6">
+				<div class="live-tile" data-mode="flip" data-delay="4500">
+					<div>
+						<a href="blog/" title="Blog" class="tile orange bord icon-blog"></a>
+					</div>
+					<div>
+						<a href="blog/" title="Blog" class="tile orange bord font-fix">
+						<p>Blog Section:</p>
+							<ol>
+								<li>Posts</li>
+								<li>News</li>
+							</ol>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row" style="margin-bottom:25px">
+			<div class="col-md-2 col-sm-3 col-xs-6">
+				<a href="{{site.linkedin}}"  class="tile blue bord lk-ico"></a>
+			</div>
+
+			<div class="col-md-2 col-sm-3 col-xs-6">
+				<a href="{{site.twitter}}"  class="tile blue bord tw-ico"></a>
+			</div>
+
+			<div class="col-md-2 col-sm-3 col-xs-6">
+				<a href="{{site.facebook}}" class="tile blue bord fk-ico"></a>
+			</div>
+
+			<div class="col-md-2 col-sm-3 col-xs-6">
+				<a href="feed.xml/" class="tile purple bord rs-ico"></a>
+			</div>
+			<div class="col-md-2 col-sm-3 col-xs-6">
+				<a href="{{site.gplus}}" class="tile orange bord gl-ico"></a>
+			</div>			
+		</div>
+	</nav>
+</div>
