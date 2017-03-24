@@ -1,19 +1,19 @@
 ---
 author: sagarmattoo
 layout: post
-title: "Azure Open VPN ARM template"
+title: "Azure OpenVPN ARM template"
 description: ""
 category: VPN
 comments: true
 tags:
 - Azure ARM
-- Open VPN
+- OpenVPN
 - Proxy
-- By-pass proxy
+- by-pass Proxy
 ---
 
 
- Want to access the Internet safely and securely by-passing the proxy servers, here's an Azure ARM template to setup an open VPN server within couple of minutes.
+ Want to access the Internet safely and securely by-passing the proxy servers, here's an Azure ARM template to setup an OpenVPN server within couple of minutes.
 
 **Prerequisites**
 
