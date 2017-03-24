@@ -1,15 +1,50 @@
-<footer class="row">
-      <div class="col-ms-12 text-center">
-            <hr/>
-            {% if site.footersvg == 'true' %}
-                  <div>{% include svg-icons.html %}</div>
-            {% endif %}
-            &copy; {{ site.time | date: '%Y' }} - {{site.author}}. All rights reserved<br/>
-            Built using 
-            {% if page.theme And page.theme != "" And page.theme != nil %}
-            <a class="{{page.theme}}-link" href="http://jekyllrb.com/">Jekyll</a>
-            {% else %}
-            <a href="http://jekyllrb.com/">Jekyll</a>
-            {% endif %}
-      </div>
+<footer class="notepad-site-footer">
+    <div class="copyright" style="line-height: 20px;">
+     <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0;" src="https://i.creativecommons.org/l/by/4.0/80x15.png"></a> 
+     This work by Sagar Mattoo is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.     
+ </div>
+ <div class="social-icons">
+    {% if site.owner.twitter %}
+    <a href="http://twitter.com/{{ site.owner.twitter }}">
+        <span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+            <i class="fa fa-twitter fa-stack-1x"></i>
+        </span>
+    </a>
+    {% endif %}
+    {% if site.owner.google_plus %}
+    <a href="{{ site.owner.google_plus }}">
+        <span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+            <i class="fa fa-google-plus fa-stack-1x"></i>
+        </span>
+    </a>
+    {% endif %}
+    {% if site.owner.instagram %}
+    <a href="http://instagram.com/{{ site.owner.instagram }}">
+        <span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+            <i class="fa fa-instagram fa-stack-1x"></i>
+        </span>
+    </a>
+    {% endif %}
+    {% if site.owner.github %}
+    <a href="http://github.com/{{ site.owner.github }}">
+        <span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+            <i class="fa fa-github fa-stack-1x"></i>
+        </span>
+    </a>
+    {% endif %}
+    {% if site.owner.facebook %}
+    <a href="http://facebook.com/{{ site.owner.facebook }}">
+        <span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+            <i class="fa fa-facebook fa-stack-1x"></i>
+        </span>
+    </a>
+    {% endif %}
+</div>
+
+<div class="cf"></div>
 </footer>

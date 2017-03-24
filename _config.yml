@@ -1,64 +1,72 @@
-# Configurations
-markdown: kramdown
-markdown_ext:  markdown,mkdown,mkdn,mkd,md
-highlighter: pygments
+title:            
+description:      "Talk is cheap. Show me the code!"
+logo:             logo.png
+disqus_shortname: sagarmattoo
+share:            true
+dropcap:	   true
+# Change url to your domain. Leave localhost server or blank when working locally.
+# or use the hint from http://jekyllrb.com/docs/github-pages/ to keep this the same 
+# whether working locally or remotely. Start Jekyll with: jekyll serve --baseurl ''
+url:        	 http://smattoo.github.io/
 
-# Permalinks
-permalink:        /blog/:year/:month/:day/:title
+# Owner/author information
+owner:
+  name:           Sagar Mattoo
+  avatar:         sagarmattoo.jpg
+  email:          mattoo.sagar@gmail.com
+  # Use the coder's toolbox at http://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii to encode your description into XML string
+  description:    To become a programmer read code, To become a good programmer write readable code. 
+  # Social networking links used in footer. Update and remove as you like.
+  twitter:        mattoosagar
+  facebook:       sagar.mattoo.77
+  github:         smattoo    
+  instagram:      smattoo
+  # For Google Authorship https://plus.google.com/authorship
+  google_plus:    https://plus.google.com/102785366102391278783
 
-# Setup
-title:            'Sagar Mattoo'
-tagline:          'Learnings from experience'
-description:      'Sagar''s technical blog'
-url:              'https://smattoo.github.io'
-baseurl:          ''
+# Analytics and webmaster tools stuff goes here
+google_analytics:
+google_verify:      
+# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
+bing_verify:         
 
-# Navigation
-navigation:
-- text: About
-  url: /about/
-- text: Blog
-  url: /blog/
-- text: Tags
-  url: /tags/
-- text: Archive
-  url : /archive/
+# Links to include in footer navigation
+# For external links add external: true
+links:
+  - title: Home
+    url: /
+    external: false
+    icon: home
+  - title: Categories
+    url: /categories
+  - title: About
+    url: /about
 
-# Author Details
-author:         'Sagar Mattoo'
-linkedin:       'http://in.linkedin.com/pub/sagar-mattoo/56/7a/18a'
-twitter:        'https://twitter.com/mattoosagar'
-facebook:       'https://www.facebook.com/sagar.mattoo.77'
-gplus:          'https://plus.google.com/106795982492993354177/'
+# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone:    Asia/Calcutta
+future:      true
+rouge: pygments
+markdown:    kramdown
+paginate:    5
+paginate_path: "page:num"
 
-# Google Analytics
-gahandler: 'UA-60858224-1'
+# https://github.com/mojombo/jekyll/wiki/Permalinks
+permalink:   pretty
 
-#if footer-links-visible is 'true' the svg-icons will be shown top on the copy right. 
-#else the svg icons will not exist
-footersvg: 'true'
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  enable_coderay: false
 
-footer-links:
-  dribbble: 
-  email: None
-  facebook: 
-  flickr: 
-  github: 
-  instagram: 
-  linkedin: 
-  pinterest: 
-  rss: # just type anything here for a working RSS icon, make sure you set the "url" above!
-  google: None
-  twitter: None
-  stackoverflow: #users/4388898/peter-zhu # your stackoverflow profile, e.g. "users/50476/bart-kiers"
+  coderay:
+    coderay_line_numbers: 
+    coderay_line_numbers_start: 1
+    coderay_tab_width: 4
+    coderay_bold_every: 10
+    coderay_css: class
 
-# Disqus
-disqushandler: 'sagarmattoo'
-
-# Blog Configurations
-paginate: 10 # Posts per page on the blog index
-paginate_path: '/blog/page:num'
-destination: ./_site
-
-# Custom vars
-version:          0.7.10
+gems:
+- jemoji
+- jekyll-paginate
