@@ -28,7 +28,7 @@ tags:
 
 **Github:** [source](https://github.com/smattoo/openvpn-azure-arm-template "GitHub link") 
 
-The template provisions an Ubuntu 16.04 vm and sets up the open vpn server. Post deployment of the template, you just need to download the **.ovnpn** configuration file and pass the same to the open vpn client running on your machine. 
+The template provisions an Ubuntu 16.04 vm and sets up the open vpn server. Post deployment of the template, you just need to download the **.ovnpn** configuration file and pass the same to the OpenVPN client running on your machine. 
 
 That's it you now have established a private tunnel to access the internet.
   
