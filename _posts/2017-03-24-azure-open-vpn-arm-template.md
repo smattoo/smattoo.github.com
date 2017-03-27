@@ -18,6 +18,10 @@ tags:
 
 - Microsoft Azure Subscription with some credits:-)
 
+**Clients**
+
+- Tested for [OpenVPN 2.4.1 and 2.3.14](https://openvpn.net/index.php/open-source/downloads.html "OpenVPN client download") clients on Windows 8.1 and above.
+
 <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fsmattoo%2Fopenvpn-azure-arm-template%2Fmaster%2Fopenvpn-azuredeploy.json" target="_blank">
     <img src="http://azuredeploy.net/deploybutton.png"/>
 </a>
