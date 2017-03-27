@@ -30,9 +30,8 @@ Finally, had to go to the basics, we switched to simple PowerShell task instead 
 
 We tried some initial options, but did not work:-(
 
-1. Passing the default fault credentials by adding the following line to the custom PowerShell script that the task runs:	
+- Passing the default fault credentials by adding the following line to the custom PowerShell script that the task runs:	
 
 	`[System.Net.WebRequest]::DefaultWebProxy.Credentials = [System.Net.CredentialCache]::DefaultCredentials`		
 
-2. Passing the proxy credentials through powershell.exe.config.
-
+- Passing the proxy credentials through powershell.exe.config.
