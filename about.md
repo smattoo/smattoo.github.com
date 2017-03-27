@@ -27,7 +27,7 @@ I believe in CL/CA pipeline, yes you read it right, it's not CI/CD:-). CL/CA sta
 
 I have experience working on Microsoft Azure, C#, .Net, Node.js, SharePoint, client side JS frameworks like Knockout, Angular and React. I am enthusiastic about the learning curve involved in building highly scalable and reliable distributed applications, still learning to apply TDD/DDD.
 
-Other than acquiring/giving fundas at work:-) I love playing badminton and snooker, an aspiring guitarist. I like dancing but only after a beer is in:-)
+Other than acquiring/giving fundas at work:-) I love playing badminton and snooker, an aspiring guitarist. I like dancing, but only after a beer is in:-)
 
 
 This is my personal blog and currently has {{ site.posts | size }} posts in {{ site.categories | size }} categories which combinedly have {{ total_words }} words, which will take an average reader ({{ site.wpm }} WPM) approximately <span class="time">{{ total_readtime }}</span> minutes to read. {% if featuredcount != 0 %}There are <a href="{{ site.url }}/featured">{{ featuredcount }} featured posts</a>, you should definitely check those out.{% endif %}
