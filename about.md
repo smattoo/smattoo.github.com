@@ -21,7 +21,7 @@ chart: true
     {% endif %}
 {% endfor %}
 
-Thanks for visiting my blog, I'm **Sagar Mattoo**. I am a programmer. In India, back then teenagers of my age were mostly stuck between PCM vs PCB fight (M => engineering vs B => medicine), well I choose the easier route, a much-needed characteristic to be a good programmer:-)
+Thanks for visiting my blog, I'm **Sagar Mattoo**. I am a programmer. In India, back then teenagers of my age were mostly stuck between PCM vs PCB fight (M => engineering vs B => medicine), well I applied the KISS principle:-) to choose the easier route, a much-needed characteristic to be a good programmer.
 
 I believe in CL/CA pipeline, yes you read it right, it's not CI/CD:-). CL/CA stands for continuously learning and continuously applying. Well, the rate which technology is evolving I am pretty sure to keep up with the pace we as programmers need CL/CA ingrained in us.
 
