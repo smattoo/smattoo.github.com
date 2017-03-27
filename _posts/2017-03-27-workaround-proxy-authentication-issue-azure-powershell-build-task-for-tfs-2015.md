@@ -12,12 +12,20 @@ tags:
 - Proxy authentication
 ---
 
-# Issue:-( #
-We had been working on setting up a Microsoft Azure PowerShell task on on-Premise TFS 2015 server, however the a NTML proxy sever on the network stood as a wall:-(, not allowing the initial handshake between the task and the Azure Subscription.
+## Issue:-( ##
+We had been working on setting up a Microsoft Azure PowerShell task on on-Premise TFS 2015 server, however the a NTML proxy sever on the network stood as a wall:-( not allowing the initial handshake between the task and the Azure Subscription.
 
 Basically, Azure PowerShell build task tries to run **Add-AzureRmAccount** cmdlet which makes a call out to Azure to add an authenticated account to be used for Azure cmdlets and this is where it gets blocked by the proxy. This happens much before entering the custom script passed to the task as parameter.
 
-# Workaround:-) #
+## Options Tried:-( ##
+Tried some initial options like, but didn't work:-(
+
+Passing the default credentials by adding this `[System.Net.WebRequest]::DefaultWebProxy.Credentials = 
+[System.Net.CredentialCache]::DefaultCredentials` to the custom PowerShell script that the task runs	  
+
+Passing the proxy credentials through powershell.exe.config.
+
+## Workaround:-) ##
 
 Finally, had to go to the basics, we switched to simple PowerShell task instead of Azure PowerShell for doing the initial handshake and passing the default credentials to the proxy. Below is the code snippet we added to our PoweShell scripts:
 
@@ -26,12 +34,3 @@ Finally, had to go to the basics, we switched to simple PowerShell task instead 
     $secureCredential = New-Object System.Management.Automation.PSCredential($ApplicationId, $SecureKey)
     Add-AzureRmAccount -ServicePrincipal -Tenant $TenantId -Credential $secureCredential
 
-**Note:**
-
-We tried some initial options, but did not work:-(
-
-- Passing the default fault credentials by adding the following line to the custom PowerShell script that the task runs:	
-
-	`[System.Net.WebRequest]::DefaultWebProxy.Credentials = [System.Net.CredentialCache]::DefaultCredentials`		
-
-- Passing the proxy credentials through powershell.exe.config.
