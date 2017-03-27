@@ -27,7 +27,7 @@ Passing the proxy credentials through powershell.exe.config.
 
 ## Workaround:-) ##
 
-Finally, had to go to the basics, we switched to simple PowerShell task instead of Azure PowerShell for doing the initial handshake and passing the default credentials to the proxy. Below is the code snippet we added to our PoweShell scripts:
+Finally, had to go to the basics, we switched to simple PowerShell task instead of Azure PowerShell for doing the initial handshake and passing the default credentials to the proxy. Below is the code snippet we added to our PowerShell scripts(you would need to pass TenantId, ApplicationId, ServicePrincipleKey as params to the script):
 
     [System.Net.WebRequest]::DefaultWebProxy.Credentials = [System.Net.CredentialCache]::DefaultCredentials
     $SecureKey = ConvertTo-SecureString $ServicePricipalKey -AsPlainText -Force
