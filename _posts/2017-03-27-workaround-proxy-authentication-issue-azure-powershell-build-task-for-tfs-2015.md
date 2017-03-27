@@ -6,10 +6,11 @@ description: ""
 category: TFS
 comments: true
 tags:
-- Azure PowerShell build task
+- Azure
 - TFS 2015 
-- Azure Deployment
-- Proxy authentication
+- PowerShell
+- Proxy Authentication
+- http-status-code-407
 ---
 
 ## Issue:-( ##
