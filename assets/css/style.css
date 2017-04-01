@@ -29,7 +29,7 @@ h1, h2, h3, h4, h5, h6 {
 
 header, main, footer {
   position: relative;
-  z-index: 1; }
+ }
 
 main, .notepad-share-icons, .notepad-disqus {
   background: white; }
@@ -72,7 +72,8 @@ main, .notepad-share-icons, .notepad-disqus {
     -webkit-transition: -webkit-transform .3s;
     transition: transform .3s;
     padding-top: 0;
-    padding-bottom: 3.125rem; }
+    padding-bottom: 3.125rem;
+    z-index: 1 }
     .notepad-blog-menu ul li {
       display: block;
       margin: 0;
