@@ -23,7 +23,7 @@ chart: true
 
 Thanks for visiting my blog, I'm **Sagar Mattoo**. I am a programmer. In India, back then teenagers of my age were mostly stuck between PCM vs PCB fight (M => engineering vs B => medicine), well I applied the KISS principle:-) to choose the easier route, a much-needed characteristic to be a good programmer.
 
-I believe in CL/CA pipeline, yes you read it right, it's not CI/CD:-). CL/CA stands for continuously learning and continuously applying. Well, the rate which technology is evolving I am pretty sure to keep up with the pace we as programmers need CL/CA ingrained in us.
+I believe in CL/CA pipeline, yes you read it right, it's not CI/CD:-). CL/CA stands for continuously learning and continuously applying. Well, the rate at which technology is evolving I am pretty sure to keep up with the pace we as programmers need CL/CA ingrained in us.
 
 I have experience working on Microsoft Azure, C#, .Net, Node.js, SharePoint, client side JS frameworks like Knockout, Angular and React. I am enthusiastic about the learning curve involved in building highly scalable and reliable distributed applications, still learning to apply TDD/DDD.
 
